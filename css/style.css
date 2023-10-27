@@ -1,0 +1,71 @@
+
+.navigation{
+    list-style-type: none;
+    background-color: #373738;
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    height: 80px;
+}
+.navItem{
+    padding: 10px;
+    padding-top: 30px;
+}
+.logo{
+    width: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-right: auto;
+}
+.navigation a{
+text-decoration: none;
+color: white;
+}
+
+.heroImg{
+    height: 380px;
+    padding: 25px;
+}
+
+.information{
+padding-left: 70px;
+height: 380px;
+width:auto;
+padding-right: 70px;
+text-align: left;
+font-size: 24px;
+}
+
+.content{
+    width: 300px;
+    padding: 25px;
+    margin: 0 auto;
+    height: 300px;
+    float: left;
+    padding-left: 200px;
+}
+.footer{
+    display: inline-block;
+    background-color: #373738;
+    padding: 25px;
+    display: flex;
+    position: relative;
+    margin-top: 700px;
+    padding-left: auto;
+}
+.footerItem{
+    padding: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.bottomPics{
+padding-left: 200px;
+padding-top: 100px;
+}

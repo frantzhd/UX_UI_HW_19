@@ -1,0 +1,181 @@
+
+.navigation{
+    list-style-type: none;
+    background-color: #373738;
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    height: 80px;
+}
+.navItem{
+    padding: 10px;
+    padding-top: 30px;
+}
+.logo{
+    width: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-right: auto;
+}
+.navigation a{
+text-decoration: none;
+color: white;
+}
+
+.footer{
+    display: inline-block;
+    background-color: #373738;
+    padding: 25px;
+    display: flex;
+    position: relative;
+    margin-top: 700px;
+    padding-left: auto;
+}
+.footerItem{
+    padding: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0% auto;
+    align-items: flex-start;
+    gap: 1em;
+    text-align: left;
+    padding-bottom: 70px;
+}
+
+.hero{
+display: flex;
+padding-left: 50px;
+margin: 0% auto;
+gap: 2em;
+padding-top: 100px;
+padding-bottom: 100px;
+justify-content: flex-start;
+}
+.mySkills{
+padding-left: 50px;
+}
+.mySkills h1{
+    text-align: center;
+}
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0px;
+    margin: 0 auto;
+    align-content: center;
+}
+.item1{
+    grid-area: 1 / 1;
+    text-align: center;
+}
+.item2{
+    grid-area: 1 / 2;
+}
+.item3{
+    grid-area: 2 / 1;
+}
+.item4{
+    grid-area: 2 / 2;
+    align-content: center;
+    padding-left: 10%;
+    text-align: center;
+}
+.item5{
+    grid-area: 3 / 1;
+    text-align: center;
+    padding-right: 10%;
+}
+.item6{
+    grid-area: 3 / 2;
+}
+.item7{
+    grid-area: 4 / 1;
+}
+.item8{
+    grid-area: 4 / 2;
+    align-content: center;
+    padding-left: 10%;
+    text-align: center;
+}
+.myWork{
+    padding-left: 50px;
+    justify-content: center;
+}
+.myWork h1{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    .flexContainer{
+        grid-template-columns: 1fr;
+        gap: 1em;
+        text-align: left;
+    }
+
+    .hero{
+    width: auto;
+    flex-direction: column;
+}
+    .workGrid{
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+    align-content: center;
+    }
+    .item1{
+        grid-area: 1;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .item2{
+        grid-area: 2;
+    }
+    .item3{
+        grid-area: 4;
+        padding-bottom: 10px;
+    }
+    .item4{
+        grid-area: 3;
+        text-align: center;
+        padding-bottom: 10px;
+
+    }
+    .item5{
+        grid-area: 5;
+        text-align: center;
+        padding-bottom: 10px;
+
+    }
+    .item6{
+        grid-area:6;
+        padding-bottom: 10px;
+    }
+    .item7{
+        grid-area: 8;
+        padding-bottom: 10px;
+
+    }
+    .item8{
+        grid-area: 7;
+        text-align: center;
+        padding-bottom: 10px;
+}
+.logo{
+    height: 10%;
+    width: 10%;
+    padding-right: auto;
+    text-align: center;
+}
+}
