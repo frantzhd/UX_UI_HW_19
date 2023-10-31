@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".open").click(function(){
+            $(".popupOverlay, .popupContent").addClass("active");
+            $(".close, .popupOverlay").click(function(){
+             $(".popupOverlay, .popupContent").removeClass("active");  
+            })
+  })
+
+});
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +40,18 @@
             </nav>
         </div>
     </header>
+      <!--MODAL-->
+<div class="popupOverlay">
+    <div class="popupContent">
+        <h2>More About Me</h2>
+        <p>
+            Hello there, I’m Frantz Drouillard!
+            I’m a UX/UI designer with a background in graphic design. I have translated my visual communication problem solving skills into solving the problems of user experiences. I’ve worn a lot of hats  over the years from design drop shipping to production management and that’s due to my flexibility and adaptability. I’m a team player who’s always willing, ready, and able to learn more.
+            I really enjoy the UI design side along with the creative process of brainstorming/sketching while applying different ideas to come up with a solution to a design problem. I think it's more fun when collaborating on a project because in a team more ideas can be bounced off one another and combined for a synergized result that is as amazing as it is unexpected.</p>
+        <a href="#" class="btn open">Close</a>
+
+    </div>
+</div>
     <section class="hero">
         <div class="portrait">
             <img src="images/portrait_home.jpg" alt="portrait" width="300" height="300">
@@ -36,10 +65,15 @@
                 and that’s due to my flexibility and adaptability. 
                 I’m a team player who’s always willing, ready, and able to learn more.
         </div>
+        
     </section>
+  <div><a href="#" class="btn open"> More About Me</a></div>
+
  <!--  My UX Skills section coded using CSS flex -->
-    <section class="mySkills">
-        <h1>My UX Skills</h1>
+    <section class="mySkills" id="skills">
+      <!-- <a href="#skills" class="skillButton">My UX Skills</a> -->
+        <h1 href="#skills">My UX Skills</h1>
+
         <div class="flexContainer">
             <div>
               <img src="images/research.jpg" alt="research" width="15%" height="15%">
@@ -134,6 +168,7 @@
 
         </div>
         <h3> View all projects</h3>
+        <a href="#skills" class="skillButton">My UX Skills</a>
     
     </section>
 
@@ -149,5 +184,6 @@
 
         </ul>
     </footer>
+    
 </body>
 </html>
